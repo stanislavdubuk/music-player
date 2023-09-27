@@ -71,6 +71,14 @@ export const Player = () => {
     audioPlayer.current = new Audio(SONGS[currentSong].source);
   }, [currentSong]);
 
+  React.useEffect(() => {
+    if (audioPlayer.current) {
+      const seconds = Math.floor(audioPlayer.current.duration);
+
+      if (progressBar.current) progressBar.current.max = String(seconds);
+    }
+  }, [audioPlayer?.current?.duration]);
+
   return (
     <div className={s.player}>
       <div className={s.container}>
