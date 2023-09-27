@@ -1,0 +1,26 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: fit-content;
+}
+
+.playButton {
+  width: 64px;
+  height: 64px;
+}
+
+.backwardButton {
+  svg {
+    margin-right: 4px;
+  }
+}
+
+.forwardButton {
+  svg {
+    margin-left: 4px;
+    transform: rotate(180deg);
+  }
+}

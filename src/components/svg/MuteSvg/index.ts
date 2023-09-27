@@ -1,0 +1,1 @@
+export { MuteSvg } from './MuteSvg';

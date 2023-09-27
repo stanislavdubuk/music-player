@@ -1,0 +1,1 @@
+export { SpeakerSvg } from './SpeakerSvg';

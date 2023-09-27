@@ -1,0 +1,14 @@
+.container {
+  width: calc(100% - 24px);
+  max-width: 1246px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 16px);
+    max-width: none;
+  }
+}
