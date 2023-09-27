@@ -1,0 +1,1 @@
+export { ArrowsSvg } from './ArrowsSvg';
